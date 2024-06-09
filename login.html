@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Atualizado</title>
+    <style>
+        /* Estilos gerais */
+        body {
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        
+        .login-container {
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 60%;
+            text-align: center;
+            max-width: 600px;
+        }
+
+        /* Estilos para campos de entrada */
+        input[type="text"],
+        input[type="password"] {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        /* Estilos para botões */
+        .btn-container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        button {
+            width: 48%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .btn-entrar {
+            background-color: #e65555;
+            color: white;
+        }
+
+        .btn-limpar {
+            background-color: #d8d3d3;
+            color: black;
+        }
+
+        .btn-incluir-cadastro {
+            background-color: #ec9f7b;
+            color: black;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        /* Estilo para texto informativo */
+        .info-text {
+            font-family: Arial, sans-serif;
+            margin-top: 20px;
+            font-size: 16px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <img src="C:\Users\M60261\Downloads\ALERT ACADEMY.png" alt="" width="120">
+        <h2>Login</h2>
+        <form action="alertas.html" method="post">
+            <input type="text" name="username" placeholder="Matricula Aluno" required>
+            <input type="password" name="password" placeholder="Senha" required>
+            <div class="btn-container">
+                <button type="submit" class="btn-entrar">Entrar</button>
+                <button type="reset" class="btn-limpar">Limpar</button>
+            </div>
+            <p class="info-text">Não possui cadastro? Realize clicando abaixo</p>
+            <button type="button" class="btn-incluir-cadastro" onclick="location.href='cadastro.html'">Incluir Cadastro</button>
+        </form>
+    </div>
+</body>
+</html>

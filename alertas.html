@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alertas de Faculdade</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif; /* Troquei a fonte para Arial para melhor legibilidade */
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        .header {
+            background-color: #ffffff;
+            text-align: center;
+            padding: 20px;
+        }
+        .logo {
+            max-height: 100px; /* Reduzi um pouco a altura da logo */
+            width: auto; /* Mantém a proporção da imagem */
+        }
+        .container {
+            max-width: 600px; /* Reduzi a largura do container */
+            margin: 20px auto; /* Aumentei a margem superior e inferior */
+            padding: 0 20px;
+        }
+        .alert {
+            background-color: #e09590;
+            color: white;
+            padding: 15px;
+            margin-bottom: 15px; /* Reduzi o espaçamento entre os alertas */
+            border-radius: 5px;
+            position: relative; /* Adicionado para posicionamento relativo */
+        }
+        .alert h3 {
+            margin-top: 0; /* Removendo margem superior padrão do título */
+        }
+        .alert-heading {
+            text-align: center; /* Centralizando o título */
+            position: absolute; /* Posicionando acima do balão */
+            top: -30px; /* Afastando do balão */
+            left: 50%; /* Centralizando horizontalmente */
+            transform: translateX(-50%); /* Ajustando para centralizar completamente */
+            background-color: #f5f5f5; /* Cor de fundo */
+            color: white; /* Cor do texto */
+            padding: 5px 10px; /* Espaçamento interno */
+            border-radius: 3px; /* Borda arredondada */
+        }
+        .exit-button {
+            display: block;
+            width: 150px;
+            margin: 20px auto;
+            padding: 12px;
+            text-align: center;
+            background-color: #6dbdf3;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+        .exit-button:hover {
+            background-color: #aacbd1;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <img src="C:\Users\M60261\Downloads\ALERT ACADEMY.png" alt="Alert Academy" class="logo">
+</div>
+
+<div class="container">
+    <div class="alert">
+        <h3>Matrícula</h3>
+        <p>Seja bem-vindo à Dom Helder para realizar o sonho de ser um advogado, João da Silva.</p>
+    </div>
+    <div class="alert">
+        <h3>Aulas</h3>
+        <p>As aulas começam dia 02 de Julho de 2024, enviaremos mais informações em breve.</p>
+    </div>
+    <div class="alert">
+        <h3>Avaliações</h3>
+        <p>Atividade Avaliativa próxima - 16/06 (AVALIAÇÃO INSTITUCIONAL) - 17/06 - (AVALIAÇÃO DOS PROFESSORES).</p>
+    </div>
+    <div class="alert">
+        <h3>Eventos</h3>
+        <p>Visita ao Campus III - Brumadinho, programado para o mês de Julho. Em breve divulgaremos mais informações.</p>
+    </div>
+    <a href="#" class="exit-button">Sair do Ambiente</a>
+</div>
+
+</body>
+</html>
